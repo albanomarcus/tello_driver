@@ -19,9 +19,16 @@
 			<param name="camera_calibration" value="$(arg camera_calibration)" />			
 		</node>
 
+<<<<<<< Updated upstream
 		<node pkg="image_transport" name="image_compressed" type="republish" args="compressed in:=image_raw raw out:=image_raw" >
 			<param name="image_transport" value="h264"/>
 		</node>
 		</group>
+=======
+		<node pkg="image_transport" name="image_decompressed" type="republish" args="compressed in:=image_raw raw out:=image_raw">
+			<param name="image_transport" value="h264"/>
+		</node>
+	</group>
+>>>>>>> Stashed changes
 
 </launch>
